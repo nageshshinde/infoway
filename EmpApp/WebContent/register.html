@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<a href="register.html">Register</a>|
+<a href="login.html">Login</a>|
+<a href="profile">Profile</a>|
+<a href="list?no=1">Employee List</a>|
+<a href="logout">Logout</a><br><br>
+<h1>Employee Register Form</h1>
+<form action="emp" method="post">
+<table><tr><td>
+Employee Name:</td><td><input type="text" name="eName"></td></tr>
+<tr><td>Date of Birth:</td><td><input type="date" name="dob"></td></tr>
+<tr><td>Address:</td><td><textarea rows="5" cols="10" name="address"></textarea></td></tr>
+<tr><td>Gender:</td><td><input type="radio" name="gender" value="Male"> 
+		<input type="radio" name="gender" value="feMale"> <br></td></tr>
+<tr><td>Dept:</td><td><select name="dept">
+		<option value="default">select</option>
+		<option value="Developer">Developer</option>
+		<option Value="HR">HR</option>
+		<option value="Salse">Salse</option>
+		<option value="admin">admin</option>
+
+</select></td></tr>
+<tr><td>email:</td><td><input type="email" name="emailId"></td></tr>
+<tr><td>Password:</td><td><input type="password" name="pass"></td></tr>
+<tr><td>Shift:</td><td><input type="checkbox" name="shift" value="morning">9:00 am to 6:00 pm
+<input type="checkbox" name="shift" value="morning">12:00 pm to 8:00 pm
+<input type="checkbox" name="shift" value="evening">7:00 pm to 1:00 am
+</td></tr>
+<tr><td></td><td><input type="submit" value="Register">
+<input type="reset" value="Reset"></td></tr>
+</table>
+
+</form>
+</body>
+</html>
